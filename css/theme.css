@@ -1,3 +1,14 @@
+/* ALL */
+:root {
+	--corporate-color-1: #DC3545;
+	--corporate-color-hover-1: #DC3540;
+	/*--corporate-color-2: #2292bb;
+	--default-color: #323232;*/
+}
+/* END ALL */
+
+
+/* FONTS */
 @font-face {
     font-family: HelveticaNeueCyr-Light;
     src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf);
@@ -33,13 +44,6 @@
     src: url(../fonts/Gilroy/Gilroy-Black.ttf);
 }
 
-:root {
-	--corporate-color-1: #DC3545;
-	--corporate-color-hover-1: #DC3540;
-	/*--corporate-color-2: #2292bb;
-	--default-color: #323232;*/
-}
-
 h1 {
 	font-family: Gilroy-Black;
 	color: white;
@@ -57,17 +61,6 @@ h2.header-sub-title {
 	font-family: HelveticaNeueCyr-Roman;
 	color: #ffffff;
 	font-size: 40px;
-}
-
-.order-section .col-md-6 {
-	padding-top: 145px;
-	padding-bottom: 145px;
-}
-
-.order-section img {
-	position: absolute;
-	bottom: 0;
-	left: 12%;
 }
 
 .order-section h2 {
@@ -111,6 +104,8 @@ a {
 a:hover {
 	color: var(--corporate-color-hover-1);
 }
+/* END FONTS */
+
 
 th, td {
 	border: 1px solid #c7c7c7;
@@ -224,6 +219,8 @@ td span {
 }*/
 /*** END BUTTONS ***/
 
+
+/*** MENU ***/
 #navbarSupportedContent1 {
 	font-family: HelveticaNeueCyr-Roman;
 	font-size: 14px;
@@ -293,6 +290,7 @@ td span {
 	background: rgba(248,249,250,.85); */
 	position: absolute;
 	width: 100%;
+	height: 80px;
 	z-index: 999;
 	top: 59px;
 }
@@ -303,6 +301,8 @@ td span {
     color: #003f20;
     text-decoration: none;
 }
+/*** END MENU ***/
+
 
 /* HEADER */
 header {
@@ -416,6 +416,28 @@ header {
 }
 /* END HEADER */
 
+
+/*** NAV SCROLLER ***/
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+/*** END NAV SCROLLER ***/
+
+
 .title-line {
 	width: 125px;
 	height: 10px;
@@ -427,6 +449,7 @@ header {
 mark.count {
 	display: none;
 }
+
 
 /*** PORTFOLIO SECTIONS ***/
 .post-entry,
@@ -512,6 +535,7 @@ mark.count {
 }
 /* End portfolio section */
 /*** END PORTFOLIO SECTIONS ***/
+
 
 /*** QUESTIONS SECTION ***/
 .accordion-button{
@@ -886,26 +910,6 @@ header .row.align-items-center.text-start {
 /*** END BREADCRUMBS ***/
 
 
-/*** NAV SCROLLER ***/
-.nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-}
-/*** END NAV SCROLLER ***/
-
 /*** PORTFOLIO SLIDER ***/
 #carouselExampleIndicators2 .carousel-item {
     height: 450px;
@@ -919,6 +923,21 @@ header .row.align-items-center.text-start {
 	vertical-align: baseline;
 }
 /*** END PORTFOLIO SLIDER ***/
+
+
+/*** ORDER SECTION ***/
+.order-section .col-md-6 {
+	padding-top: 145px;
+	padding-bottom: 145px;
+}
+
+.order-section img {
+	position: absolute;
+	bottom: 0;
+	left: 12%;
+}
+/*** END ORDER SECTION ***/
+
 
 /*** CONTACTS SECTION 3 ***/
 .contacts-section-3 {
@@ -1354,9 +1373,11 @@ header .row.align-items-center.text-start {
 	margin: auto;
 }
 
+/* Svg Color Change Filter */
 .menu-point {
     filter: invert(28%) sepia(78%) saturate(2475%) hue-rotate(343deg) brightness(152%) contrast(109%);
 }
+/**** end svg color change filter ****/
 
 .request-title {
 	color: #323232;
@@ -1404,8 +1425,12 @@ header .row.align-items-center.text-start {
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+	#top-menu-1 {
+		display: none;
+	}
+
 	#top-menu-2 {
-		margin-top: 0;
+		top: 0;
 		position: sticky;
 		width: 100%;
 		z-index: 999;
@@ -1415,7 +1440,7 @@ header .row.align-items-center.text-start {
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	#top-menu-2 {
-		margin-top: 0;
+		top: 0;
 		position: sticky;
 		width: 100%;
 		z-index: 999;
