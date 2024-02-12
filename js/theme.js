@@ -1,5 +1,5 @@
 /* Функция "Прилипало" */
-onscroll = function prilipalo() {
+/*onscroll = function prilipalo() {
 	var prokrutka = window.pageYOffset;
 	if ( window.screen.width >= 769 ) {
 		if ( prokrutka > 50 ) {
@@ -16,7 +16,7 @@ onscroll = function prilipalo() {
 		document.getElementById('top-menu-2').style.top = 0;
 		document.getElementById('top-menu-2').classList.add('fixed-top');
 	}
-}
+}*/
 
 
 /* Убираем сообщение об успешной отправки */
