@@ -1424,10 +1424,6 @@ header .row.align-items-center.text-start {
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-	#top-menu-1 {
-		display: none;
-	}
-
 	#top-menu-2 {
 		top: 0;
 		position: sticky;
