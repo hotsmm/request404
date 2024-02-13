@@ -1613,3 +1613,9 @@ header .row.align-items-center.text-start {
 		justify-content: center;
 	}	
 }
+
+@media (max-width: 370px) {
+	.navbar-logo {
+		font-size: 18px;
+	}
+}
